@@ -17,15 +17,15 @@
     <form action="action/save_teacher.php" method="POST">
         <div class="form-group">
             <label for="email">Username</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter username">
+            <input type="text" name="username" class="form-control" id="email" placeholder="Enter username">
         </div>
         <div class="form-group">
             <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+            <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Enter password">
         </div>
         <div class="form-group">
             <label for="fullname">Full Name</label>
-            <input type="fullname"class="form-control" id="fullname" placeholder="Enter full name">
+            <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Enter full name">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
     </form>
