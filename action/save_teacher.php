@@ -10,9 +10,9 @@
         $sql = "INSERT INTO teacher (username, password, name) VALUES ('$username', '$pwd', '$fullname')";
         
         if($conn->query($sql) === TRUE) {
-            echo "Sign up successfully!";
+            echo "Thank you for signing up, Teacher " . $fullname;
         } else {
-            echo "You have an error: " . $conn->error;
+            echo "Ooops! Please try again. You have an error: " . $conn->error;
         }
 
         $conn->close();
