@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 19, 2021 at 09:54 AM
+-- Generation Time: Oct 20, 2021 at 04:32 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -40,10 +40,9 @@ CREATE TABLE `question` (
   `Choice4` varchar(250) NOT NULL,
   `SoloAnswer` varchar(250) NOT NULL,
   `CheckAnswer` tinyint(1) NOT NULL,
-  `QuizID` varchar(8) NOT NULL,
   `ChoiceAnswerKey` int(11) NOT NULL,
-  `SoloAnswerKey` varchar(250) NOT NULL,
-  `CheckAnswerKey` tinyint(1) NOT NULL
+  `OrderNo` int(11) NOT NULL,
+  `QuizID` varchar(8) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -81,6 +80,16 @@ CREATE TABLE `teacher` (
   `Name` varchar(150) NOT NULL,
   `Password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `teacher`
+--
+
+INSERT INTO `teacher` (`ID`, `Username`, `Name`, `Password`) VALUES
+(1, 'erikasong', 'Erika', '1234'),
+(2, 'erikasong19', 'Erika Simbulan Raymundo', ''),
+(4, '[object Object]', '[object Object]', '[object Object]'),
+(17, 'erikaraymundo', 'Raymundo, Ganda', '1234');
 
 --
 -- Indexes for dumped tables
@@ -133,7 +142,7 @@ ALTER TABLE `student`
 -- AUTO_INCREMENT for table `teacher`
 --
 ALTER TABLE `teacher`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Constraints for dumped tables

@@ -66,4 +66,13 @@ $(document).ready(function(){
             $(counters[i]).html(i+1);
         }
     });
+
+    $("#btn-save-quiz").click(function(){
+        //ajax
+        //iterate over .question then save into every array
+        var questions = [];
+        var types = [];
+        var choices = []; //kapag choices = {array}
+        var 
+    });
 });
