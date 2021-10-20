@@ -11,6 +11,7 @@
         
         if($conn->query($sql) === TRUE) {
             echo "Thank you for signing up, Teacher " . $fullname;
+            $_SESSION["teacher_un"] = $username;
         } else {
             echo "Ooops! Please try again. You have an error: " . $conn->error;
         }
