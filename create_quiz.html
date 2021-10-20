@@ -6,24 +6,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create your quiz!</title>
-    <!-- Latest compiled and minified CSS -->
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6a07858133.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- JQuery UI -->
+    <link href="js/jquery-ui-1.13.0.custom/jquery-ui.css" rel="stylesheet">
+    <script src="js/jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+    <link href="js/jquery-ui-1.13.0.custom/jquery-ui.theme.css" rel="stylesheet">
+    <!-- Customized -->
+    <link href="css/master.css" rel="stylesheet">
+    <script src="js/master.js"></script>
+    <script src="js/create_quiz.js"></script>
 </head>
 
 <body>
-    <button class="btn btn-submit" id="btn-create-quiz">Create a quiz!</button>
 
-    <main>
+    <nav class="navbar">
+        <div id="logo">
+            <img src="images/logo.png">
+        </div>
 
-        <button class="btn btn-submit" id="btn-add">+ Question</button>
-        <
-    
-    </main>
+        <div id="fullname">
+            Ma'am / Sir Erika Raymundo
+        </div>
+    </nav>
 
+    <div id="div-start-quiz">
+        <div>Excited to have fun <br> and exciting quiz for your students?</div>
+        <button id="btn-create-quiz" class="btn btn-primary main-gradient">Create Quiz Now</button>
+    </div>
+
+    <div id="div-quiz-creator">
+        <button id="btn-add-question" class="btn btn-primary main-gradient">+ Question</button>
+        <div id="questions">
+
+            <div class="ui-state-default question">
+                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                <span class="q-counter">1</span>
+                <div class="div-question-content">
+                    <input type="text" placeholder="Enter your question" class="form-text">
+                    <div class="div-qtype">Choose question type
+                        <button class="btn btn-qtype btn-qtype-selected" data-toggle="button"
+                            aria-pressed="true">Multiple Choice</button>
+                        <button class="btn btn-qtype">Identification</button>
+                        <button class="btn btn-qtype">True or false</button>
+                    </div>
+                    <div class="div-multiplechoice">
+                        Choices (Do not forget to select the correct answer)
+                        <div>
+                            <label>
+                                <input type="radio" name="choice" value="a" class="form-check-input">
+                                <input type="text" name="choice-content">
+                            </label>
+                            <label>
+                                <input type="radio" name="choice" value="b" class="form-check-input">
+                                <input type="text" name="choice-content">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="choice" value="c" class="form-check-input">
+                                <input type="text" name="choice-content">
+                            </label>
+                            <label>
+                                <input type="radio" name="choice" value="d" class="form-check-input">
+                                <input type="text" name="choice-content">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="div-identification">
+                        <!-- Ans (Do not forget to select the correct answer) -->
+                        <input type="text" name="solo-answer" placeholder="Enter the correct answer">
+                    </div>
+                    <div class="div-truefalse">
+                        <div>
+                            <label>
+                                <input type="radio" name="choice" value="True" class="form-check-input">True
+                            </label>
+                            <label>
+                                <input type="radio" name="choice" value="False" class="form-check-input">False
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-close"></button>
+            </div>
+
+        </div>
 </body>
 
 </html>
