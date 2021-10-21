@@ -1,5 +1,5 @@
 $("#btn-submit").click(function(){
-  $.post("action/save_teacher.php",
+  $.post("action/teacher_signup.php",
     {
         username: $("#username").val(),
         pwd: $("#pwd").val(),
