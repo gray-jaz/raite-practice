@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(isset($_SESSION["teacher_un"])) {
+        header("location: welcome.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,7 +39,7 @@
             <div class="form-group">
                 <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Enter password" style="border-radius: 25px; height: 50px;">
             </div>
-            <button type="submit" class="btn btn-default" id="btn-submit">Sign Up</button>
+            <button type="submit" class="btn btn-default" id="btn-submit">Login</button>
         </div>
     </div>
 
