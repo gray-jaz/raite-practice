@@ -19,9 +19,9 @@
     <script src="js/jquery-ui-1.13.0.custom/jquery-ui.js"></script>
     <link href="js/jquery-ui-1.13.0.custom/jquery-ui.theme.css" rel="stylesheet">
     <!-- Customized -->
-    <link href="css/master.css" rel="stylesheet">
-    <script src="js/master.js"></script>
-    <script src="js/create_quiz.js"></script>
+    <link href="../css/master.css" rel="stylesheet">
+    <script src="../js/master.js"></script>
+    <script src="../js/create_quiz.js"></script>
     <!-- Sweet Alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
