@@ -1,0 +1,76 @@
+body {
+	background: #395E66;
+}
+
+#welcome-div {
+	position: relative;
+	text-align: center;
+  	animation:goes_up 1.5s ease;
+}
+
+@-webkit-keyframes goes_up{
+    from {margin-top: 20%;} 
+    to{margin-top: 10%;
+    } 
+}
+
+
+#welcome-div text {
+    font-size: 26px;
+    font-family: Calibri Light;
+    color: #FFFFFF;
+}
+
+
+
+.text-bg {
+	background-image: linear-gradient(
+        45deg,
+        #77D875 16.666%, 
+        #77D875 16.666%, 
+        #2EBEBE 33.333%, 
+        #2EBEBE 33.333%, 
+        #77D875 50%, 
+        #77D875 50%, 
+        #77D875 66.666%, 
+        #2EBEBE 66.666%, 
+        #743CBB 83.333%, 
+        #743CBB 83.333%);
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#choose-role {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    margin-top: 5%;
+    text-align: center;
+    animation: role_in 3s;
+}
+
+@-webkit-keyframes role_in{
+    0% {opacity: 0} 
+    25% {opacity: 0} 
+    50% {opacity: 0} 
+    100% {opacity: 1} 
+}
+
+.i-am {
+    font-size: 32px;
+    font-family: Tempus Sans ITC;
+    color: #ffffff;
+}
+
+.btn-i-am {
+    border: none;
+    border-radius: 5px;
+    height: 80px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 26px;
+    font-family: Calibri Light;
+    font-weight: bold;
+    color: #ffffff;
+}
