@@ -26,25 +26,39 @@
     <link href="../js/jquery-ui-1.13.0.custom/jquery-ui.theme.css" rel="stylesheet">
     <!-- Customized -->
     <link href="../css/master.css" rel="stylesheet">
+    <link href="../css/teacher.css" rel="stylesheet">
+    <script src="../js/logout.js"></script>
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/logout.js"></script>
 </head>
 
 <body>
 
-    <nav class="navbar">
+    <nav>
         <div id="logo">
             <img src="../images/logo.png">
         </div>
 
-        <div id="fullname">
-            Teacher <?php echo $_SESSION["teacher_name"] ?>
+        <div id="account">
+            <span>Teacher <?php echo $_SESSION["teacher_name"] ?></span>
+            <i id="logout" class="fas fa-sign-out-alt"></i>
         </div>
 
-        <a href="logout.php"><i class="fas fa-sign-out-alt"></i></a>
     </nav>
 
     <div id="div-start-quiz">
         <div>Excited to have fun <br> and exciting quiz for your students?</div>
-        <a href="create_quiz.php"><button id="btn-create-quiz" class="btn btn-primary main-gradient">Create Quiz Now</button></a>
+        <button id="btn-create-quiz" class="btn btn-primary main-gradient">Create Quiz Now</button>
+    </div>
+    
+    <div id="div-list-quizzes">
+        <div>Click a quiz to start</div>
+        <ul>
+            <li>quiz code 09413131</li>
+            <li>quiz code 09413131</li>
+            <li>quiz code 09413131</li>
+        </ul>
     </div>
 
 </body>
