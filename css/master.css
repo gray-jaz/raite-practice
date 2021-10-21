@@ -5,7 +5,11 @@
     font-family: "Poppins", sans-serif;
 }
 
-
+a {
+    color: inherit!important;
+    letter-spacing: 5%; 
+    text-decoration: none;
+}
 
 .btn-primary {
     border-radius: 255px;

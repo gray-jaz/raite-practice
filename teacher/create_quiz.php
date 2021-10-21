@@ -30,6 +30,7 @@
     <script src="../js/create_quiz.js"></script>
     <!-- Sweet Alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/logout.js"></script>
 </head>
 
 <body>

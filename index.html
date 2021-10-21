@@ -18,7 +18,7 @@
 	<div id="choose-role">
 		<text class="i-am">I am a....</text><br><br>
 		<button class="btn-i-am" style="background-color: #9BDD59;" data-toggle="modal" data-target="#exampleModal">Student</button>
-		<button class="btn-i-am" style="background-color: #FE9B8E;margin-left: 10px;">Teacher</button>
+		<button class="btn-i-am" style="background-color: #FE9B8E;margin-left: 10px;" id="btn-teacher">Teacher</button>
 	</div>
 
 	<!-- Modal -->
@@ -69,6 +69,11 @@
 			}
 	    });
 	  });
+
+	  $("#btn-teacher").click(function(){
+		  window.location = "teacher/login.php";
+	  })
+
 </script>
 </body>
 </html>
