@@ -10,7 +10,7 @@ body {
 
 @-webkit-keyframes goes_up{
     from {margin-top: 20%;} 
-    to{margin-top: 10%;
+    to{margin-top: 8%;
     } 
 }
 
@@ -45,7 +45,7 @@ body {
     width: 100%;
     left: 0;
     position: absolute;
-    margin-top: 5%;
+    margin-top: 3%;
     text-align: center;
     animation: role_in 3s;
 }
@@ -70,7 +70,6 @@ body {
     width: 200px;
     cursor: pointer;
     font-size: 26px;
-    font-family: Calibri Light;
-    font-weight: bold;
+    font-family: Century Gothic;
     color: #ffffff;
 }
