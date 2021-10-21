@@ -1,5 +1,4 @@
 $("#btn-submit").click(function(){
-    // alert("hello!"); 
   $.post("action/save_teacher.php",
     {
         username: "" + $("#username").val() + "",

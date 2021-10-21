@@ -20,20 +20,17 @@
             <img src="images/white_teaching.gif"/>
         </div>
         <div class="div-right">
-            <h4> Create your account </h4>
-            <h6> As a teacher, you need to create an <br> account to create a quiz. </h6>
-        <!-- <form action="action/save_teacher.php" method="POST"> -->
+            <h4> Login to your account </h4>
+            <h6> As a teacher, you need to login to create a quiz. 
+                <br> Do not have an account? <a href="teacher_signup.html">Register now.</a>
+            </h6>
             <div class="form-group">
                 <input type="text" name="username" class="form-control" id="username" placeholder="Enter username" style="border-radius: 25px; height: 50px;">
             </div>
             <div class="form-group">
                 <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Enter password" style="border-radius: 25px; height: 50px;">
             </div>
-            <div class="form-group">
-                <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Enter full name" style="border-radius: 25px; height: 50px;">
-            </div>
             <button type="submit" class="btn btn-default" id="btn-submit">Sign Up</button>
-        <!-- </form> -->
         </div>
     </div>
 
