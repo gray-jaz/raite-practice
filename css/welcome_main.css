@@ -1,11 +1,11 @@
 body {
-	background: #395E66;
+    background: #395E66;
 }
 
 #welcome-div {
-	position: relative;
-	text-align: center;
-  	animation:goes_up 1.5s ease;
+    position: relative;
+    text-align: center;
+    animation:goes_up 1.5s ease;
 }
 
 @-webkit-keyframes goes_up{
@@ -17,13 +17,14 @@ body {
 
 #welcome-div text {
     font-size: 26px;
+    font-family: Calibri Light;
     color: #FFFFFF;
 }
 
 
 
 .text-bg {
-	background-image: linear-gradient(
+    background-image: linear-gradient(
         45deg,
         #77D875 16.666%, 
         #77D875 16.666%, 
@@ -58,6 +59,7 @@ body {
 
 .i-am {
     font-size: 32px;
+    font-family: Poppins;
     color: #ffffff;
 }
 
@@ -68,6 +70,6 @@ body {
     width: 200px;
     cursor: pointer;
     font-size: 26px;
-    font-family: Century Gothic;
+    font-family: Poppins;
     color: #ffffff;
 }

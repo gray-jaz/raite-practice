@@ -1,0 +1,18 @@
+body {
+	background: #395E66;
+}
+
+.title-bg {
+	background: linear-gradient(95.52deg, #77D875 2.07%, #2EBEBE 46.26%, #743CBB 103.07%);
+	margin: 0 auto;
+	width: 20%;
+	height: 70px;
+	text-align: center;
+	border-radius: 255px;
+}
+
+.title-txt {
+	font-size: 32px;
+	color: white;
+	font-family: Poppins;
+}
