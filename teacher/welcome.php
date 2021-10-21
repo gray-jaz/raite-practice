@@ -49,7 +49,7 @@
 
     <div id="div-start-quiz">
         <div>Excited to have fun <br> and exciting quiz for your students?</div>
-        <button id="btn-create-quiz" class="btn btn-primary main-gradient">Create Quiz Now</button>
+        <a href="create_quiz.php"> <button id="btn-create-quiz" class="btn btn-primary main-gradient">Create Quiz Now</button></a>
     </div>
     
     <div id="div-list-quizzes">

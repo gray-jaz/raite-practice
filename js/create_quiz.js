@@ -166,7 +166,7 @@ $(document).ready(function(){
         }
 
 
-        $.post("action/create_quiz.php",
+        $.post("../action/create_quiz.php",
         {
             quiz: JSON.stringify(objects)
         },
