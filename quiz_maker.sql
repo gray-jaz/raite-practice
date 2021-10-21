@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 20, 2021 at 09:10 AM
+-- Generation Time: Oct 21, 2021 at 03:36 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -109,7 +109,9 @@ INSERT INTO `quiz` (`Code`, `Status`, `DateCreated`, `TeacherUsername`) VALUES
 
 CREATE TABLE `student` (
   `ID` int(11) NOT NULL,
-  `Nickname` varchar(100) NOT NULL
+  `Nickname` varchar(100) NOT NULL,
+  `Points` int(11) NOT NULL,
+  `QuizCode` varchar(8) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -154,7 +156,8 @@ ALTER TABLE `quiz`
 -- Indexes for table `student`
 --
 ALTER TABLE `student`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `QuizCode` (`QuizCode`);
 
 --
 -- Indexes for table `teacher`
@@ -193,6 +196,12 @@ ALTER TABLE `question`
 --
 ALTER TABLE `quiz`
   ADD CONSTRAINT `quiz_ibfk_1` FOREIGN KEY (`TeacherUsername`) REFERENCES `teacher` (`Username`);
+
+--
+-- Constraints for table `student`
+--
+ALTER TABLE `student`
+  ADD CONSTRAINT `student_ibfk_1` FOREIGN KEY (`QuizCode`) REFERENCES `quiz` (`Code`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
