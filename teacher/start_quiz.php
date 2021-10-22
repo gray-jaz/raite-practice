@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+$_SESSION['quiz_code']="AFHNRWV9";
+// $_SESSION['sequence_no'] = 0;
 if (!isset($_SESSION["teacher_un"])) {
     header("location: login.php");
 }

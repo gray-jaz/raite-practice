@@ -3,7 +3,7 @@
 
 session_start();
 
-$_SESSION['quiz_code']="G13FqYKm";
+// $_SESSION['quiz_code']="AFHNRWV9";
 
 if (!isset($_SESSION["teacher_un"])) {
     header("location: login.php");
