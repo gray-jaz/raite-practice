@@ -14,6 +14,7 @@
     <title>Create your quiz!</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/teacher.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -44,12 +45,16 @@
             Ma'am / Sir Erika Raymundo
         </div>
     </nav>
-    <div id="div-quiz-creator">
-        <button id="btn-add-question" class="btn btn-primary main-gradient">+ Question</button>
-        <div id="questions">
-        </div>
+    <div class="space-div">
+        <div id="div-quiz-creator">
+            <div id="questions">
+            </div>
 
-        <button id="btn-save-quiz" class="btn btn-primary main-gradient">Save Quiz</button>
+            <div id="create-options">
+                <button id="btn-add-question" class="btn btn-primary main-gradient">+ Question</button>
+                <button id="btn-save-quiz" class="btn btn-primary main-gradient">Save Quiz</button>
+            </div>
+        </div>
     </div>
 </body>
 

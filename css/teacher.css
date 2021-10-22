@@ -62,3 +62,119 @@ nav {
     position: relative;
     padding: 10%;
 }
+
+#fullname {
+    color: #ffffff;
+    margin-right: 2%;
+}
+
+#div-quiz-creator {
+    top: 5%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#btn-add-question {
+    margin-bottom: 1%;
+    float: left;
+}
+
+#btn-save-quiz {
+    margin-top: 1%;
+    float: right;
+}
+
+#create-options {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.wel-t-main {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#div-start-quiz {
+    margin-top: -2%;
+}
+
+#div-list-quizzes {
+    border-left: 2px solid #395E66;
+    padding: 125px 40px;
+}
+
+.space-div {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.form-text {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid #395E66;
+    color: #395E66;
+    width: 40%;
+    font-size: 32px;
+    margin-left: 2%;
+}
+
+.q-duration {
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.q-time {
+    border: none;
+    border-radius: 12px;
+}
+
+.div-qtype {
+    margin-left: 2%;
+    margin-top: .5%;
+}
+
+.div-qtype button {
+    margin-left: 2%;
+}
+
+#choice-maker {
+    margin-left: 2%;
+    margin-top: 1.5%;
+}
+
+.c-mul-div {
+    margin-top: 2%;
+    margin-left: 3%;
+    width: 80%;
+}
+
+.c-mul {
+    margin-right: 3%;
+}
+
+.c-mul-box {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid #395E66;
+    color: #395E66;
+    font-size: 16px;
+}
+
+.btn-close {
+    margin-top: 2%;
+}
+
+.fill-box {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid #395E66;
+    color: #395E66;
+    font-size: 16px;   
+    width: 350px;
+    margin-top: 1.5%;
+}

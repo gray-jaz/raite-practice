@@ -47,20 +47,21 @@
 
     </nav>
 
-    <div id="div-start-quiz">
-        <div>Excited to have fun <br> and exciting quiz for your students?</div>
-        <a href="create_quiz.php"> <button id="btn-create-quiz" class="btn btn-primary main-gradient">Create Quiz Now</button></a>
+    <div class="wel-t-main">
+        <div id="div-start-quiz">
+            <p>Excited to have fun <br> and exciting quiz for your students?<p><br>
+            <a href="create_quiz.php"> <button id="btn-create-quiz" class="btn btn-primary main-gradient">Create Quiz Now</button></a>
+        </div>
+        
+        <div id="div-list-quizzes">
+            <div>Click a quiz to start</div>
+            <ul>
+                <li>quiz code 09413131</li>
+                <li>quiz code 09413131</li>
+                <li>quiz code 09413131</li>
+            </ul>
+        </div>
     </div>
-    
-    <div id="div-list-quizzes">
-        <div>Click a quiz to start</div>
-        <ul>
-            <li>quiz code 09413131</li>
-            <li>quiz code 09413131</li>
-            <li>quiz code 09413131</li>
-        </ul>
-    </div>
-
 </body>
 
 </html>
