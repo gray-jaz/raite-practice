@@ -11,15 +11,12 @@ if($result->num_rows > 0) {
     $row = $result->fetch_assoc();
 
     if($row["Active"] == 0) {
-        echo "1";
+        echo "0";
     } 
 
     else if($row["Active"] == 1) {
         echo "1";
     }
-
-    //0 is active
-    //1 is active
 }
 
 ?>
