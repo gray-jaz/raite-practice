@@ -2,6 +2,24 @@ body {
 	background: #395E66;
 }
 
+.quiz-container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+}
+
+.btn-options {
+	border-radius: 3px;
+	border: none;
+	color: #ffffff;
+	font-family: Poppins;
+	font-size: 21px;
+	height: 70px;
+	width: 200px;
+	margin-top: 4.5%;
+	cursor: pointer;
+}
+
 .title-bg {
 	background: linear-gradient(95.52deg, #77D875 2.07%, #2EBEBE 46.26%, #743CBB 103.07%);
 	margin: 0 auto;
@@ -10,10 +28,14 @@ body {
 	text-align: center;
 	border-radius: 255px;
 	margin-top: 50px;
+	display: flex;
 }
 
-.title-bg img{
-	margin-top: 3.5%;
+.title-bg img {
+	margin-top: 6%;
+	margin-left: 10%;
+	height: 50%;
+	width: 80%;
 }
 
 /*
@@ -126,8 +148,8 @@ body {
 
 @media only screen and (max-width: 1024px) {
   	.title-bg img{
-  		margin-top: 8%;
+  		margin-top: 10%;
 		height: 30px;
-		width: 150px;
+		width: 160px;
 	}
 }
