@@ -48,14 +48,14 @@ if (isset($_POST)) {
                 $sql = "INSERT INTO question (title, type, duration, `point`, checkanswer, sequence_no, quizid)
                 values ('$qText', '$qType', '$dTime', '$points', '$trueFalseAnswer',  $sequence_no, '$quizCode')";
             }
-    
+        }
+        
             
-            if ($conn->query($sql) === TRUE) {
-                echo "Quiz code $quizCode";
-                $_SESSION["quiz_code"] = $quizCode;
-            } else {
-                echo "Quiz cannot be saved, error " . $conn->error;
-            }
+        if ($conn->query($sql) === TRUE) {
+            echo "Quiz code: $quizCode";
+            $_SESSION["QuizCode"] = $quizCode;
+        } else {
+            echo "Quiz cannot be saved, error " . $conn->error;
         }
     }
 

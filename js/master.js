@@ -1,3 +1,3 @@
 $( function() {
-    $( "#questions" ).sortable();
-  } );
+  $( "#questions" ).sortable();
+} );

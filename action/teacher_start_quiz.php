@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['QuizCode'] = "G13FqYKm";
+// $_SESSION['QuizCode'] = "G13FqYKm";
 require_once "../db_connection.php";
 
 #paki-start ang quiz

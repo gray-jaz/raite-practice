@@ -30,7 +30,6 @@
     <script src="../js/logout.js"></script>
     <!-- Sweet Alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/logout.js"></script>
 </head>
 
 <body>
@@ -51,15 +50,6 @@
         <div id="div-start-quiz">
             <p>Excited to have fun <br> and exciting quiz for your students?<p><br>
             <a href="create_quiz.php"> <button id="btn-create-quiz" class="btn btn-primary main-gradient">Create Quiz Now</button></a>
-        </div>
-        
-        <div id="div-list-quizzes">
-            <div>Click a quiz to start</div>
-            <ul>
-                <li>quiz code 09413131</li>
-                <li>quiz code 09413131</li>
-                <li>quiz code 09413131</li>
-            </ul>
         </div>
     </div>
 </body>

@@ -17,6 +17,7 @@
         else {
             if($conn->query($sql) === TRUE) {
                 $_SESSION["student_in"] = $nickname;
+                $_SESSION["QuizCode"] = $quizcode;
             } else {
                 echo "Invalid Quiz Code.s";
             }

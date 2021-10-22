@@ -1,6 +1,29 @@
+var answer = "";
+
 $(document).ready(function(){
     getCurrentQuestion();
     setInterval(checkQuestion, 1000);
+
+    $("#question-container").on("click", ".multiple-ans", function(){
+        answer = $(this).val();
+        Swal.fire({
+            // icon: 'success',
+            title: 'Your answer is ' + answer,
+            showConfirmButton: false,
+            allowOutsideClick: false
+        }).then((result) => {
+            // this is where we will display the leaderboard, next page na dito
+
+        })
+    });
+
+    $("#question-container").on("click", ".fill-ans", function(){
+        
+    });
+
+    $("#question-container").on("click", ".true-false-ans", function(){
+        
+    });
 });
 
 function getCurrentQuestion() {
@@ -22,9 +45,10 @@ function checkQuestion() {
         if (result == "success") {
             if (data == "1") {
                 console.log("test2");
-            } else {
-                console.log("test3");
                 getCurrentQuestion();
+            } else {
+                console.log("test3 data is " + data);
+                Swal.close();
             }
         }
     });
@@ -47,5 +71,5 @@ function startTimer(duration, display) {
 }
 
 function answer() {
-    
+
 }
